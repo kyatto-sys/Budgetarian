@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budgetarian 💸</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>💸 Budgetarian</h1>
+    <p>Track your money scraps!!</p>
+    <div class="theme-toggle">
+  <label>
+    <input type="checkbox" id="theme-switch" />
+    🌞 / 🌙
+  </label>
+</div>
+
+  </header>
+
+  <main>
+    <form id="budget-form">
+      <input type="text" id="name" placeholder="Name (optional)" />
+      <input type="number" id="amount" placeholder="Amount in ₱" required />
+      <select id="day">
+        <option value="">-- Select Day --</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+      <button type="submit">➕ Add Entry</button>
+    </form>
+
+    <section id="summary">
+      <h2>📊 Weekly Summary</h2>
+      <div id="daily-breakdown"></div>
+      <div class="total-section">
+        <h3>Total This Week: <span id="weekly-total">₱0</span></h3>
+        <button id="reset-week">🔁 Reset Week</button>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>ℹ️ About Budgetarian</h2>
+      <p>This idea came from my vacation wherein I had nothing to do, worse, I don't have money, so I asked my family to give me some coins or any amout for a day and I forgot to track it so this is it! 🏖️✨ simple, fun, and a way to stay money-wise even on break!</p>
+    </section>
+  </main>
+
+    <section id="tip">
+  <h2>💡 Tip of the Day</h2>
+  <p id="daily-tip">Loading tip...</p>
+</section>
+
+  <footer>
+    <p>Made with ❤️ by Kat</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
