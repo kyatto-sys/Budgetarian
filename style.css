@@ -102,6 +102,30 @@ form,
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark-mode form,
+body.dark-mode #summary,
+body.dark-mode #about {
+  background: rgba(30, 30, 30, 0.8);
+  color: #eee;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode button {
+  background-color: rgba(50, 50, 50, 0.9);
+  color: #eee;
+  border: 1px solid #666;
+}
+
+body.dark-mode ::placeholder {
+  color: #bbb;
+}
+
 
 #reset-week {
   margin-top: 10px;
